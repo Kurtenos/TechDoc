@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Html Technical Documentation</title>
+</head>
+<body>
+    <!--Navigation bar-->
+    <nav id="navbar">
+        <header>HTML Documentation</header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#HTML">HTML</a>
+        <a class="nav-link" href="#CSS">CSS</a>
+        <a class="nav-link" href="#Hello_World">Hello World</a>
+        <a class="nav-link" href="#Comments_&_Documentation">Comments & Documentation</a>
+    </nav>
+    <!--Intro section-->
+    <main id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header>Introduction</header>
+            <!--2x Paragraphs-->
+            <p>HTML stands for HyperText Markup Language and is the standard markup language for documents deigned to be displayed in a web browser. It is often assisted by other programming languages such as Cascading Style Sheets (CSS) and JavaScript.</p>
+            <p>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes, and other items.</p>
+            <!--3x Lists-->
+            <ul>
+                <li>HTML Describes the structure of a Web page</li>
+                <li>HTML Consists of a series of elements</li>
+                <li>A few HTML Elements label pieces of content like this:</li>
+                <!--3x Code Elements-->
+                This is a heading<code>&lt;h1&gt;</code>
+                This is a paragraph<code>&lt;p&gt;</code>
+                This is a link,<code>&lt;a href=&quot;#&quot;&gt;</code>
+        </section>
+        <!--HTML Section-->
+        <section id="HTML" class="main-section">
+            <header>HTML</header>
+            <!--2x Paragraphs-->
+            <p>HTML elements are delineated by tags, written using angle brackets. Directly introduce content into the page. Other tags provide information about document text and may include sub-element tags. Browsers do not display the HTML tags but use them to interpret the content of the page.</p>
+            <p>Exampel of a simple HTML Document:</p>
+            <!--10x Code Elements-->
+                <code>&lt;!DOCTYPE html&gt;</code>
+                <code>&lt;html&gt;</code>
+                <code>&lt;head&gt;</code>
+                <code>&lt;title&gt;Enter Title Here&lt;/title&gt;</code>
+                <code>&lt;/head&gt;</code>
+                <code>&lt;body&gt;</code>
+                <code>&lt;h1&gt;First Heading Here&gt&lt;/h1&gt;</code>
+                <code>&lt;h1&gt;First Paragraph Here&gt;&lt;/p1&gt;</code>
+                <code>&lt;/body&gt;</code>
+                <code>&lt;/html&gt;</code>
+            <!--7x Lists-->
+            <ul>
+                <li>The !DOCTYPE HTML declaration defines that this document is an HTML 5 document</li>
+                <li>The html element is the root element of an HTML page</li>
+                <li>The head element contains meta information about the HTML page</li>
+                <li>The title element specifies a title for the HTML page</li>
+                <li>The body element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc</li>
+                <li>The h1 element defines a large heading</li>
+                <li>The p element defines a paragraph</li>
+        </section>
+        <!--CSS Section-->
+        <section id="CSS" class="main-section">
+            <header>CSS</header>
+            <!--4x Paragraphs-->
+            <p>CSS (Cascading Style Sheets) is used to style and visually enhance the content of HTML documents. CSS rules are applied to HTML elements to define their appearance, layout, and presentation on the web page. These rules consist of selectors, which target specific HTML elements, and declarations, which define the style properties to be applied.</p>
+            <p>Selectors in CSS identify which elements the styles should be applied to. They can target elements based on their tag names, classes, IDs, attributes, or their relationship with other elements.</p>
+            <p>The style properties within CSS declarations specify how the selected elements should be styled. These properties include attributes like color, font-size, margin, padding, border, background-color, etc. Each property can have a corresponding value that determines its appearance.</p>
+            <p>Example of a simple external styles.css Code:</p>
+            <!--1x Code element-->
+            <pre><code>
+            body {
+                background-color: powderblue;
+            }
+            h1 {
+                color: blue;
+            }
+            p {
+                color: red;
+            }
+            </code></pre>
+        </section>
+        <!--Hello World section-->
+        <section id="Hello_World" class="main-section">
+            <header>Hello World</header>
+            <!--2x Paragraphs-->
+            <p>A “Hello, world!” program is traditionally used to introduce novice programmers to a programming language. “Hello, world!” is also traditionally used in a sanity test to make sure that a computer language is correctly installed, and that the operator understands how to use it.</p>
+            <!-- 1x List-->
+            <ul>
+                <li>Example HTML code that writes out Hello World on a page</li>
+                <!--8x Code elements-->
+                <code>&lt;!DOCTYPE html&gt;</code>
+                <code>&lt;html lang="en"</code>
+                <code>&lt;head&gt;</code>
+                <code>&lt;/head&gt;</code>
+                <code>&lt;body&gt;</code>
+                <code>&lt;p&gt;Hello World!&lt;/p&gt;</code>
+                <code>&lt;/body&gt;</code>
+                <code>&lt;/html&gt;</code>
+        </section>
+        <!--Comment Section-->
+        <section id="Comments_&_Documentation" class="main-section">
+            <header>Comments & Documentation</header>
+                <!--2x Paragraphs-->
+                <p>It is important to document all type of code. With a simple &lt;!--Comment here--&gt; in your HTML code adds a comment that are visiable to the programmer but the program doesn't run the code.</p>
+                <p> Reasons why comments and documentation are important and useful:
+                <!--7x List-->
+                <ul>
+                    <li>Understanding and Maintenance: Well-documented code helps developers understand the purpose, functionality, and usage of different components within a software system. This facilitates easier maintenance and debugging, especially when multiple developers work on the same codebase or when revisiting the code after a period of time.</li>
+                    <li>Onboarding New Developers: Documentation serves as a valuable resource for onboarding new developers to a project. It provides them with insights into the project's architecture, design decisions, coding standards, and best practices. This accelerates their learning curve and enables them to become productive more quickly.</li>
+                    <li>Collaboration and Communication: Documentation fosters collaboration and communication among team members by providing a common reference point for discussing design choices, implementation details, and project requirements. It ensures that everyone is on the same page and reduces misunderstandings or misinterpretations.</li>
+                    <li>Code Reusability: Well-documented code encourages code reuse by making it easier for developers to identify and understand reusable components or modules. This promotes modularity and scalability within a software system, leading to more efficient development practices.</li>
+                    <li>Future Enhancements and Evolution: Documentation helps developers anticipate future enhancements or modifications to the codebase by providing insights into its underlying structure and dependencies. This facilitates smoother evolution of the software over time, enabling it to adapt to changing requirements and technological advancements.</li>
+                    <li>Compliance and Regulation: In certain industries or organizations, documentation may be required to comply with regulatory standards, industry best practices, or internal policies. Properly documented code ensures transparency, accountability, and auditability, which are essential for regulatory compliance.</li>
+                    <li>Knowledge Transfer: Documentation serves as a knowledge repository for capturing domain-specific knowledge, business rules, and implementation details. It enables knowledge transfer between team members and ensures that critical information is preserved even if key individuals leave the project or organization.</li>
+        </section>
+    </main>
+</body>
+</html>

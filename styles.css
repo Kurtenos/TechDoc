@@ -1,0 +1,92 @@
+/* Styles only Paragraphs */
+p {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Resetting default margin and padding */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting up basic styles for Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E1D9D1
+}
+
+/* Styles for navigation */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #333;
+    overflow-y: auto;
+}
+
+#navbar header {
+    color: #fff;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-link:hover {
+    background-color: #555;
+}
+
+/* Styles for main content */
+#main-doc {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.main-section header {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.main-section p {
+    margin-bottom: 15px;
+}
+
+.main-section code {
+    display: block;
+    padding: 5px;
+    color: #333;
+}
+
+.main-section ul {
+    margin-bottom: 15px;
+}
+
+.main-section li {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 768px) {
+    #navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow-y: visible;
+        margin-bottom: 20px;
+    }
+    #main-doc {
+        margin-left: 0
+    }
+}
